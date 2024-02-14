@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "./components/Navbar";
 import RankingRows from "./components/RankingRows";
 
@@ -18,7 +19,7 @@ export default function Home() {
 
   return (
     <main className=" w-full flex flex-col items-center justify-center ">
-      <Navbar />
+      <Navbar/>
       <h1 className=" font-mono text-6xl p-5">Prop Firm Leaderboard</h1>
       <p className="font-thin text-lg p-20">Check out the best verified prop firm traders out there</p>
       <div className="flex flex-col w-1/2 border-2 border-black border-b-0">
@@ -31,7 +32,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col pt-10 justify-center items-center font-semibold text-xl">
         <p>Are you a prop firm trader that wants to keep track of your prop firm payouts?</p>
-        <button className=" text-white m-5 px-8 py-2 rounded-xl bg-amber-400  hover:scale-110 w-fit duration-300 ">Join now</button>
+        <Link href="/login" className=" text-white m-5 px-8 py-2 rounded-xl bg-amber-400  hover:scale-110 w-fit duration-300 ">Join now</Link>
       </div>
 
 
